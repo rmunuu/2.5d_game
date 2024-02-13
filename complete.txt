@@ -1,0 +1,14 @@
+import time
+
+if (mission complete):
+    complete()
+
+complete_time = pygame.time.get_ticks()
+
+def detcomplete():
+    if pygame.get_ticks() > complete_time + 0.6*5: complete_num = 0
+    elif pygame.get_ticks() < complete_time + 0.6: complete_num = 1
+    elif pygame.get_ticks() < complete_time + 0.6*2: complete_num = 2
+    elif pygame.get_ticks() < complete_time + 0.6*3: complete_num = 3
+    elif pygame.get_ticks() < complete_time + 0.6*4: complete_num = 4
+    elif pygame.get_ticks() < complete_time + 0.6*5: complete_num = 5
